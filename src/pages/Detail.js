@@ -146,19 +146,20 @@ export default function DetailPage () {
                 <Tab eventKey='stats' title='Base Stats'>
                   <Card.Body>
                     <Bar options={chartOptions} data={chartData} />
-                    {/* {pokemon.stats?.map(stat => {
-                      return (
-                        <div>
-                          <Card.Title>
-                            {stat.stat.name}: {stat.base_stat}
-                          </Card.Title>
-                        </div>
-                      )
-                    })} */}
                   </Card.Body>
                 </Tab>
-                <Tab eventKey='contact' title='Contact'>
-                  <div>Contact Page</div>
+                <Tab eventKey='moves' title='Move'>
+                  <Card.Body>
+                    <Card.Title>
+                      {pokemon.moves?.map(move => {
+                        return (
+                          <button className={selectAbility}>
+                            {move.move.name}
+                          </button>
+                        )
+                      })}
+                    </Card.Title>
+                  </Card.Body>
                 </Tab>
               </Tabs>
             </div>
