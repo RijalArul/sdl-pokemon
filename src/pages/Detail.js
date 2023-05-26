@@ -81,14 +81,23 @@ export default function DetailPage () {
       })
 
       setChartOptions({
+        type: 'bar',
         responsive: true,
-        plugins: {
-          legend: {
-            position: 'top'
+        options: {
+          indexAxis: 'y',
+          elements: {
+            bar: {
+              borderWidth: 2
+            }
           },
-          title: {
-            display: true,
-            text: 'Strengths'
+          plugins: {
+            legend: {
+              position: 'left'
+            },
+            title: {
+              display: true,
+              text: 'Strengths'
+            }
           }
         }
       })
