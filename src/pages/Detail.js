@@ -68,7 +68,7 @@ export default function DetailPage () {
               label: 'Power Heroes',
               borderColor: 'rgb(53, 162, 235)',
               backgroundColor: [
-                'rgba(0, 247, 128, 0.8)',
+                'rgba(0, 247, 128, 0.7)',
                 'rgba(219, 0, 0, 0.74)',
                 'rgba(38, 188, 7, 0.74)',
                 'rgba(11, 95, 185, 0.85)',
